@@ -1,16 +1,12 @@
-#!/usr/bin/python3
-
-"""This is the "add_integer" module.
-It supplies one function, add_integer(a, b=98)
-a and b must be integers or floats, otherwise raise a TypeError exception
-a and b must be first casted to integers if they are float
-Returns an integer: the addition of a and b"""
+!/usr/bin/python3
+"""
+This is the "0-add_integer" module.
+The 0-add_integer module supplies one function, add_integer(a, b).
+"""
 
 
-def add_integer(a, b=98):
-    """a function that adds 2 integers and returns the result
-    a and b must be integers or floats,
-    otherwise raise a TypeError"""
+def add_integer(a, b):
+    """Return the addition of two numbers."""
     if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
     if type(b) is not int and type(b) is not float:
@@ -19,4 +15,4 @@ def add_integer(a, b=98):
         a = int(a)
     if type(b) is float:
         b = int(b)
-    return (a + b)
+    return a + b
